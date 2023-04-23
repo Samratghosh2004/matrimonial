@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP PAGE (practice)</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-weight: bolder;
+            /* font-family: 'pacifico', cursive;*/
+            box-sizing: border-box; 
+        }
+        .hero{
+            width: 100%;
+            min-height: 100vh;
+            background-color: #292929;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            
+        }
+        .hero h1 {
+            color: #fff;
+            font-weight: 500;
+            margin-bottom: 40px;
+        }
+        .signup-box {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 90%;
+            max-width: 800px;
+            background-color: #fff;
+        }
+        .left-box {
+            padding: 50px;
+            background: #6b00d5;
+            flex-basis: 50%;
+            flex-grow: 1;
+            color: #fff;
+        }
+        
+        .right-box {
+            padding: 50px;
+            flex-basis: 50%;
+            flex-grow: 1;
+        }
+        .input-box {
+            width: 100%;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #fff;
+            outline: none;
+            color: solid #fff;
+            font-size: 16px;
+            background: transparent;
+            font-weight: bolder;
+            font-family: 'pacifico', cursive;
+        }
+        ::placeholder {
+            color: #fff;
+        }
+        input[type=checkbox] {
+            margin-top: 30px;
+        }
+        .left-box label {
+            font-size: 16px;
+        }
+        .left-box button {
+            width:100%;
+            background: #fff;
+            padding: 10px;
+            border: 0;
+            outline :none;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: background 0.5s;
+            display :flex;
+            align-items: center;
+            justify-content: center;
+        } 
+        .left-box button:hover{
+            font-weight: 500;
+            background: #000;
+            color:#fff
+        }
+        .left-box button span{
+            display: inline-block;
+            width: 0px;
+            overflow: hidden;
+            transition: 0.5s;
+        }
+        .left-box button:hover span{
+            width: 40px;
+        }
+        .right-box a{
+            display: block;
+            width: 100%;
+            margin: 20px 0;
+            min-width: 250px;
+            color: #fff;
+            font-size: 16px;
+            padding: 15px 30px;
+            text-decoration: none;
+            background: #292929;
+        }
+        .right-box a i {
+            font-size: 18px;
+            margin-right: 8px;
+        }
+
+    </style>
+    
+    <script src="https://kit.fontawesome.com/d9144870ab.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="hero">
+        <h1>Create An Account</h1>
+        <div class="signup-box">
+            <div class="left-box">
+                <form>
+                    <input type="text"placeholder="Your Name:" required class="input-box">
+                    <input type="text"placeholder="username:" required class="input-box">
+                    <input type="email"placeholder="Your Email Id:" required class="input-box">
+                    <input type="password"placeholder="Create a Password" required class="input-box">
+                    <input type="checkbox" id="terms">
+                    <label for="terms">I accept the terms & conditions.</label>
+                    <button type="submit">SIGN UP <span>&#8594;</span></button>
+                </form>
+            </div>
+            <div class="right-box">
+                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i>Connect with Facebook</a>
+                <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i>Connect with Twitter</a>
+                <a href="https://www.google.com"><i class="fa-brands fa-google"></i>Connect with Google</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
